@@ -1,0 +1,84 @@
+.menubar {
+    list-style:none;
+    width:100%;
+    height:40px;
+
+    /* Background color and gradients */
+
+    background: #014464;
+
+    /* Borders */
+
+    border: 1px solid #002232;
+    box-shadow:inset 0px 0px 1px #edf9ff;
+}
+
+.menubar li {
+    float:left;
+    display:block;
+    text-align:center;
+    position:relative;
+    padding: 4px 10px 4px 10px;
+    border:none;
+}
+
+.menubar li a {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color: #EEEEEE;
+    display:block;
+    outline:0;
+    text-decoration:none;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.menubar li:hover {
+    border: 1px solid #777777;
+    background: #F4F4F4;/* Background color and gradients */
+}
+
+.menubar li:hover a {
+    color:#161616;
+    text-shadow: 1px 1px 1px #FFFFFF;
+    height: 30px; /* height of the menubar titles */
+}
+
+.menubar li .drop {
+    padding-right:0px;
+}
+
+
+.menu {
+    position:absolute;
+    left:-999em; /* Hides the drop down */
+    z-index: 1000; /*keeps the menu on top of other items*/
+    text-align:left;
+    border-top:none;
+    margin-top: 7px;
+    background:#F4F4F4; /* menu background */
+
+}
+
+.menu {width: 1000px;}
+
+.menubar li:hover .dropdown_1column,
+.menubar li:hover .dropdown_2columns,
+.menubar li:hover .dropdown_3columns,
+.menubar li:hover .dropdown_4columns,
+.menubar li:hover .menu {
+    left:-1px;top:auto;
+}
+
+.col_1,
+.col_2,
+.col_3,
+.col_4,
+.col_5 {
+    display:inline;
+    float: left;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.col_2 {width:300px;}
